@@ -14,35 +14,34 @@
         <div id="movie-list">
           <h4>Pick a movie</h4>
           <div class="input-group">
-            <!-- <span class="input-group-addon"> -->
-              <input type="radio" id="movie1" name="movie" value="Star Wars III"> Star Wars III
-              <br>
-              <input type="radio" id="movie2" name="movie" value="Star Trek"> Star Trek
-              <br>
-              <input type="radio" id="movie3" name="movie" value="Fargo"> Fargo
-              <br>
-              <input type="radio" id="movie4" name="movie" value="Mystery Men"> Mystery Men
-            <!-- </span> -->
+            <input type="radio" name="movie" value="6"> Star Wars III
+            <br>
+            <input type="radio" name="movie" value="5"> Star Trek
+            <br>
+            <input type="radio" name="movie" value="3"> Fargo
+            <br>
+            <input type="radio" name="movie" value="2"> Mystery Men
           </div>
         </div>
 
         <div id="times">
           <h4>Pick a time</h4>
-            <input type="radio" id="matinee" name="time" value="matinee"> Matinee
+            <input type="radio" id="matinee" name="time" value="-1"> Matinee
             <br>
-            <input type="radio" id="evening" name="time" value="evening"> Evening
+            <input type="radio" id="evening" name="time" value="+2"> Evening
         </div>
 
         <div id="age">
           <h4>Age Group</h4>
-          <input type="radio" name="age" value="young"> <18
+          <input type="radio" name="age" value="-1"> <18
           <br>
-          <input type="radio" name="age" value="middle"> 18-64
+          <input type="radio" name="age" value="0"> 18-64
           <br>
-          <input type="radio" name="age" value="old"> >64  
+          <input type="radio" name="age" value="-2"> >64
         </div>
-
+        <button type="submit">Check price of ticket</button>
       </form>
+      <p id="result"></p>
     </div>
   </body>
 </html>
