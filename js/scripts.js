@@ -8,6 +8,8 @@ $(function() {
     var selectedTime = parseInt($("input[name=time]:radio:checked").val());
     var selectedAge = parseInt($("input[name=age]:radio:checked").val());
     var ticketPrice = selectedMovie + selectedTime + selectedAge
-    debugger;
+
+    $(".ticketprice").show();
+    $("#result").text("$ " + ticketPrice);
   });
 });

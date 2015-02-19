@@ -14,7 +14,7 @@
         <div id="movie-list">
           <h4>Pick a movie</h4>
           <div class="input-group">
-            <input type="radio" name="movie" value="6"> Star Wars III
+            <input type="radio" name="movie" value="6" checked> Star Wars III
             <br>
             <input type="radio" name="movie" value="5"> Star Trek
             <br>
@@ -26,14 +26,14 @@
 
         <div id="times">
           <h4>Pick a time</h4>
-            <input type="radio" id="matinee" name="time" value="-1"> Matinee
+            <input type="radio" id="matinee" name="time" value="-1" checked> Matinee
             <br>
             <input type="radio" id="evening" name="time" value="+2"> Evening
         </div>
 
         <div id="age">
           <h4>Age Group</h4>
-          <input type="radio" name="age" value="-1"> <18
+          <input type="radio" name="age" value="-1" checked> <18
           <br>
           <input type="radio" name="age" value="0"> 18-64
           <br>
@@ -41,7 +41,10 @@
         </div>
         <button type="submit">Check price of ticket</button>
       </form>
-      <p id="result"></p>
+      <div class="ticketprice">
+        <h1>Your Ticket Price!</h1>
+        <p id="result"></p>
+      </div>
     </div>
   </body>
 </html>
